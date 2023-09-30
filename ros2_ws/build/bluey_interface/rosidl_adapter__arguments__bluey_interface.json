@@ -1,0 +1,8 @@
+{
+  "package_name": "bluey_interface",
+  "non_idl_tuples": [
+    "/home/jenkin/Documents/bluey/ros2_ws/src/bluey_interface:srv/Arm.srv",
+    "/home/jenkin/Documents/bluey/ros2_ws/src/bluey_interface:srv/Lights.srv",
+    "/home/jenkin/Documents/bluey/ros2_ws/src/bluey_interface:srv/Motion.srv"
+  ]
+}

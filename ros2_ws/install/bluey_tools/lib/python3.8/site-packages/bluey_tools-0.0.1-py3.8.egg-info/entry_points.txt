@@ -1,0 +1,4 @@
+[console_scripts]
+bluey_ctrl = bluey_tools.bluey_ctrl_node:main
+bluey_video = bluey_tools.bluey_video_node:main
+

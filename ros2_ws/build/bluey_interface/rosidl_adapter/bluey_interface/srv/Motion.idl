@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bluey_interface/srv/Motion.srv
+// generated code does not contain a copyright notice
+
+
+module bluey_interface {
+  module srv {
+    struct Motion_Request {
+      string command;
+    };
+    struct Motion_Response {
+      boolean result;
+    };
+  };
+};

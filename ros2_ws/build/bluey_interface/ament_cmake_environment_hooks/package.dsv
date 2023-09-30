@@ -1,0 +1,4 @@
+source;share/bluey_interface/local_setup.bash
+source;share/bluey_interface/local_setup.dsv
+source;share/bluey_interface/local_setup.sh
+source;share/bluey_interface/local_setup.zsh

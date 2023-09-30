@@ -1,0 +1,253 @@
+[0.000000] (-) TimerEvent: {}
+[0.000960] (bluey_interface) JobQueued: {'identifier': 'bluey_interface', 'dependencies': OrderedDict()}
+[0.001040] (bluey_tools) JobQueued: {'identifier': 'bluey_tools', 'dependencies': OrderedDict()}
+[0.001057] (bluey_interface) JobStarted: {'identifier': 'bluey_interface'}
+[0.006698] (bluey_tools) JobStarted: {'identifier': 'bluey_tools'}
+[0.064027] (bluey_interface) JobProgress: {'identifier': 'bluey_interface', 'progress': 'cmake'}
+[0.065077] (bluey_interface) JobProgress: {'identifier': 'bluey_interface', 'progress': 'build'}
+[0.065107] (bluey_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface', '--', '-j4', '-l4'], 'cwd': '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jenkin'), ('SSH_AGENT_PID', '1615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jenkin'), ('OLDPWD', '/home/jenkin/Documents/bluey/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1431'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jenkin'), ('JOURNAL_STREAM', '9:38391'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jenkin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/jenkin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/foxy:@/tmp/.ICE-unix/1669,unix/foxy:/tmp/.ICE-unix/1669'), ('INVOCATION_ID', 'd200fefced47423d83a1c4fc20f2ee16'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e6f92420_eaae_4ba4_b5e9_7e2c96886209'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/gstreamer-1.0/libgstlibav.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy')]), 'shell': False}
+[0.100076] (-) TimerEvent: {}
+[0.200590] (-) TimerEvent: {}
+[0.301118] (-) TimerEvent: {}
+[0.314476] (bluey_interface) StdoutLine: {'line': b'[ 10%] Built target bluey_interface__rosidl_generator_c\n'}
+[0.314705] (bluey_interface) StdoutLine: {'line': b'[ 12%] Built target bluey_interface__cpp\n'}
+[0.401237] (-) TimerEvent: {}
+[0.492237] (bluey_interface) StdoutLine: {'line': b'[ 23%] Built target bluey_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.501338] (-) TimerEvent: {}
+[0.506137] (bluey_interface) StdoutLine: {'line': b'[ 34%] Built target bluey_interface__rosidl_typesupport_cpp\n'}
+[0.515864] (bluey_interface) StdoutLine: {'line': b'[ 44%] Built target bluey_interface__rosidl_typesupport_introspection_c\n'}
+[0.517587] (bluey_interface) StdoutLine: {'line': b'[ 55%] Built target bluey_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.601475] (-) TimerEvent: {}
+[0.605533] (bluey_tools) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/bluey_tools', 'build', '--build-base', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build', 'install', '--record', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log', '--install-scripts', '$base/lib/bluey_tools', '--single-version-externally-managed'], 'cwd': '/home/jenkin/Documents/bluey/ros2_ws/src/bluey_tools', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jenkin', 'SSH_AGENT_PID': '1615', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jenkin', 'OLDPWD': '/home/jenkin/Documents/bluey/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1431', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jenkin/Documents/bluey/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jenkin', 'JOURNAL_STREAM': '9:38391', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jenkin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/jenkin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/foxy:@/tmp/.ICE-unix/1669,unix/foxy:/tmp/.ICE-unix/1669', 'INVOCATION_ID': 'd200fefced47423d83a1c4fc20f2ee16', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e6f92420_eaae_4ba4_b5e9_7e2c96886209', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/gstreamer-1.0/libgstlibav.so', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.96', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/prefix_override:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface'}, 'shell': False}
+[0.625109] (bluey_interface) StdoutLine: {'line': b'[ 65%] Built target bluey_interface__rosidl_typesupport_c\n'}
+[0.649379] (bluey_interface) StdoutLine: {'line': b'[ 76%] Built target bluey_interface__rosidl_typesupport_fastrtps_c\n'}
+[0.701574] (-) TimerEvent: {}
+[0.758307] (bluey_tools) StdoutLine: {'line': b'running egg_info\n'}
+[0.758633] (bluey_tools) StdoutLine: {'line': b'writing ../../build/bluey_tools/bluey_tools.egg-info/PKG-INFO\n'}
+[0.759012] (bluey_tools) StdoutLine: {'line': b'writing dependency_links to ../../build/bluey_tools/bluey_tools.egg-info/dependency_links.txt\n'}
+[0.759524] (bluey_tools) StdoutLine: {'line': b'writing entry points to ../../build/bluey_tools/bluey_tools.egg-info/entry_points.txt\n'}
+[0.759646] (bluey_tools) StdoutLine: {'line': b'writing requirements to ../../build/bluey_tools/bluey_tools.egg-info/requires.txt\n'}
+[0.759839] (bluey_tools) StdoutLine: {'line': b'writing top-level names to ../../build/bluey_tools/bluey_tools.egg-info/top_level.txt\n'}
+[0.773429] (bluey_interface) StdoutLine: {'line': b'[ 76%] Built target bluey_interface\n'}
+[0.779619] (bluey_tools) StdoutLine: {'line': b"reading manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'\n"}
+[0.780317] (bluey_tools) StdoutLine: {'line': b"writing manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'\n"}
+[0.780455] (bluey_tools) StdoutLine: {'line': b'running build\n'}
+[0.780520] (bluey_tools) StdoutLine: {'line': b'running build_py\n'}
+[0.780632] (bluey_tools) StdoutLine: {'line': b'copying bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools\n'}
+[0.781082] (bluey_tools) StdoutLine: {'line': b'running install\n'}
+[0.781519] (bluey_tools) StdoutLine: {'line': b'running install_lib\n'}
+[0.782021] (bluey_tools) StdoutLine: {'line': b'copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools\n'}
+[0.782514] (bluey_tools) StdoutLine: {'line': b'byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_ctrl_node.py to bluey_ctrl_node.cpython-38.pyc\n'}
+[0.784409] (bluey_tools) StdoutLine: {'line': b'running install_data\n'}
+[0.784692] (bluey_tools) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.785436] (bluey_tools) StdoutLine: {'line': b"removing '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[0.785739] (bluey_tools) StdoutLine: {'line': b'Copying ../../build/bluey_tools/bluey_tools.egg-info to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools-0.0.1-py3.8.egg-info\n'}
+[0.786154] (bluey_tools) StdoutLine: {'line': b'running install_scripts\n'}
+[0.796932] (bluey_tools) StdoutLine: {'line': b'Installing bluey_ctrl script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools\n'}
+[0.797194] (bluey_tools) StdoutLine: {'line': b'Installing bluey_video script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools\n'}
+[0.797315] (bluey_tools) StdoutLine: {'line': b"writing list of installed files to '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log'\n"}
+[0.801863] (-) TimerEvent: {}
+[0.812784] (bluey_tools) CommandEnded: {'returncode': 0}
+[0.821547] (bluey_tools) JobEnded: {'identifier': 'bluey_tools', 'rc': 0}
+[0.902006] (-) TimerEvent: {}
+[0.905696] (bluey_interface) StdoutLine: {'line': b'[ 78%] Built target bluey_interface__py\n'}
+[1.002151] (-) TimerEvent: {}
+[1.038485] (bluey_interface) StdoutLine: {'line': b'[ 87%] Built target bluey_interface__python\n'}
+[1.102286] (-) TimerEvent: {}
+[1.176475] (bluey_interface) StdoutLine: {'line': b'[ 91%] Built target bluey_interface__rosidl_typesupport_c__pyext\n'}
+[1.176639] (bluey_interface) StdoutLine: {'line': b'[ 95%] Built target bluey_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[1.185106] (bluey_interface) StdoutLine: {'line': b'[100%] Built target bluey_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.202393] (-) TimerEvent: {}
+[1.213895] (bluey_interface) CommandEnded: {'returncode': 0}
+[1.302549] (-) TimerEvent: {}
+[1.403519] (-) TimerEvent: {}
+[1.503761] (-) TimerEvent: {}
+[1.604000] (-) TimerEvent: {}
+[1.704190] (-) TimerEvent: {}
+[1.804461] (-) TimerEvent: {}
+[1.904713] (-) TimerEvent: {}
+[2.005039] (-) TimerEvent: {}
+[2.105340] (-) TimerEvent: {}
+[2.205647] (-) TimerEvent: {}
+[2.305930] (-) TimerEvent: {}
+[2.406684] (-) TimerEvent: {}
+[2.507507] (-) TimerEvent: {}
+[2.607748] (-) TimerEvent: {}
+[2.708339] (-) TimerEvent: {}
+[2.808598] (-) TimerEvent: {}
+[2.908885] (-) TimerEvent: {}
+[3.009151] (-) TimerEvent: {}
+[3.109463] (-) TimerEvent: {}
+[3.126079] (bluey_interface) JobProgress: {'identifier': 'bluey_interface', 'progress': 'install'}
+[3.151158] (bluey_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface'], 'cwd': '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jenkin'), ('SSH_AGENT_PID', '1615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jenkin'), ('OLDPWD', '/home/jenkin/Documents/bluey/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1431'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jenkin'), ('JOURNAL_STREAM', '9:38391'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jenkin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/jenkin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/foxy:@/tmp/.ICE-unix/1669,unix/foxy:/tmp/.ICE-unix/1669'), ('INVOCATION_ID', 'd200fefced47423d83a1c4fc20f2ee16'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e6f92420_eaae_4ba4_b5e9_7e2c96886209'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/gstreamer-1.0/libgstlibav.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy')]), 'shell': False}
+[3.173113] (bluey_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.173352] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/rosidl_interfaces/bluey_interface\n'}
+[3.173433] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.173491] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.173608] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/motion.h\n'}
+[3.173873] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/lights.h\n'}
+[3.173909] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.173939] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__struct.h\n'}
+[3.173970] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__type_support.h\n'}
+[3.174016] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__functions.h\n'}
+[3.174060] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__functions.c\n'}
+[3.174110] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__functions.h\n'}
+[3.174210] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__struct.h\n'}
+[3.174393] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__functions.c\n'}
+[3.174445] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__functions.h\n'}
+[3.174487] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.h\n'}
+[3.174598] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__struct.h\n'}
+[3.174727] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__functions.c\n'}
+[3.174765] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.h\n'}
+[3.175013] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/arm.h\n'}
+[3.175114] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg\n'}
+[3.175197] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.175486] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/library_path.sh\n'}
+[3.175615] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/library_path.dsv\n'}
+[3.175697] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_generator_c.so\n'}
+[3.175757] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.175787] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.175830] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.175931] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__rosidl_typesupport_fastrtps_c.h\n'}
+[3.176025] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_fastrtps_c.h\n'}
+[3.176077] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_fastrtps_c.h\n'}
+[3.176113] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg\n'}
+[3.176246] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.176310] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[3.176343] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.176484] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.176538] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.176581] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.176611] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.176721] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/dds_fastrtps\n'}
+[3.176834] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.177044] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg\n'}
+[3.177086] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.177181] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.177217] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.177266] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.177305] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.177362] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_introspection_c.h\n'}
+[3.177417] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.c\n'}
+[3.177499] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_introspection_c.h\n'}
+[3.177536] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.c\n'}
+[3.177631] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__rosidl_typesupport_introspection_c.h\n'}
+[3.177693] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__type_support.c\n'}
+[3.177784] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg\n'}
+[3.177813] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.177863] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_introspection_c.so\n'}
+[3.177952] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_c.so\n'}
+[3.177995] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.178033] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.178074] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/lights.hpp\n'}
+[3.178115] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/motion.hpp\n'}
+[3.178150] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/arm.hpp\n'}
+[3.178187] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.178215] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__type_support.hpp\n'}
+[3.178244] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.hpp\n'}
+[3.178275] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__struct.hpp\n'}
+[3.178303] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__traits.hpp\n'}
+[3.178331] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.hpp\n'}
+[3.178358] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__builder.hpp\n'}
+[3.178386] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__builder.hpp\n'}
+[3.178414] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__traits.hpp\n'}
+[3.178441] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__struct.hpp\n'}
+[3.178469] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__builder.hpp\n'}
+[3.178496] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__struct.hpp\n'}
+[3.178524] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__traits.hpp\n'}
+[3.178551] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg\n'}
+[3.178579] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.178625] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface\n'}
+[3.178690] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv\n'}
+[3.178744] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail\n'}
+[3.178780] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__type_support.cpp\n'}
+[3.178810] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.178841] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.178961] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.cpp\n'}
+[3.178997] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.179034] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.cpp\n'}
+[3.179082] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[3.179129] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_cpp.so\n'}
+[3.179177] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/pythonpath.sh\n'}
+[3.179227] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/pythonpath.dsv\n'}
+[3.179280] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/__init__.py\n'}
+[3.209617] (-) TimerEvent: {}
+[3.212930] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv\n'}
+[3.213144] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_arm.py\n'}
+[3.213286] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/__init__.py\n'}
+[3.213338] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_lights.py\n'}
+[3.213384] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_arm_s.c\n'}
+[3.213424] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_motion_s.c\n'}
+[3.213468] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_lights_s.c\n'}
+[3.213512] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_motion.py\n'}
+[3.213555] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.213811] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.214361] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.214741] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__python.so\n'}
+[3.214863] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm.idl\n'}
+[3.214961] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights.idl\n'}
+[3.215081] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Motion.idl\n'}
+[3.215138] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm.srv\n'}
+[3.215314] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm_Request.msg\n'}
+[3.215470] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm_Response.msg\n'}
+[3.215565] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights.srv\n'}
+[3.215695] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights_Request.msg\n'}
+[3.215879] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights_Response.msg\n'}
+[3.215932] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Motion.srv\n'}
+[3.215987] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Motion_Request.msg\n'}
+[3.216099] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Motion_Response.msg\n'}
+[3.216158] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/package_run_dependencies/bluey_interface\n'}
+[3.216281] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/parent_prefix_path/bluey_interface\n'}
+[3.216347] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/ament_prefix_path.sh\n'}
+[3.216463] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/ament_prefix_path.dsv\n'}
+[3.216503] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/path.sh\n'}
+[3.216545] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/path.dsv\n'}
+[3.216580] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.bash\n'}
+[3.216625] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.sh\n'}
+[3.216654] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.zsh\n'}
+[3.216681] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.dsv\n'}
+[3.216709] (bluey_interface) StdoutLine: {'line': b'-- Installing: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/package.dsv\n'}
+[3.216737] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/packages/bluey_interface\n'}
+[3.216765] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cExport.cmake\n'}
+[3.216852] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.216883] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.217041] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.217166] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cExport.cmake\n'}
+[3.217262] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.217392] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cppExport.cmake\n'}
+[3.217438] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.217482] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.217518] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cppExport.cmake\n'}
+[3.217558] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.217589] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[3.217619] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.217660] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.217690] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.217745] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.217782] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.217821] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.217856] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interfaceConfig.cmake\n'}
+[3.217895] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interfaceConfig-version.cmake\n'}
+[3.217931] (bluey_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/package.xml\n'}
+[3.221674] (bluey_interface) CommandEnded: {'returncode': 0}
+[3.310260] (-) TimerEvent: {}
+[3.411268] (-) TimerEvent: {}
+[3.512415] (-) TimerEvent: {}
+[3.612645] (-) TimerEvent: {}
+[3.712890] (-) TimerEvent: {}
+[3.813148] (-) TimerEvent: {}
+[3.913447] (-) TimerEvent: {}
+[4.013676] (-) TimerEvent: {}
+[4.113912] (-) TimerEvent: {}
+[4.214513] (-) TimerEvent: {}
+[4.314791] (-) TimerEvent: {}
+[4.415053] (-) TimerEvent: {}
+[4.516280] (-) TimerEvent: {}
+[4.616575] (-) TimerEvent: {}
+[4.716825] (-) TimerEvent: {}
+[4.817051] (-) TimerEvent: {}
+[4.917301] (-) TimerEvent: {}
+[5.017754] (-) TimerEvent: {}
+[5.118015] (-) TimerEvent: {}
+[5.177053] (bluey_interface) JobEnded: {'identifier': 'bluey_interface', 'rc': 0}
+[5.177928] (-) EventReactorShutdown: {}

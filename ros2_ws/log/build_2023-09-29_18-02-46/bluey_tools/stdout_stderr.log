@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/bluey_tools/bluey_tools.egg-info/PKG-INFO
+writing dependency_links to ../../build/bluey_tools/bluey_tools.egg-info/dependency_links.txt
+writing entry points to ../../build/bluey_tools/bluey_tools.egg-info/entry_points.txt
+writing requirements to ../../build/bluey_tools/bluey_tools.egg-info/requires.txt
+writing top-level names to ../../build/bluey_tools/bluey_tools.egg-info/top_level.txt
+reading manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+writing manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+running build
+running build_py
+copying bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+running install
+running install_lib
+copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_ctrl_node.py to bluey_ctrl_node.cpython-38.pyc
+running install_data
+  File "/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_ctrl_node.py", line 80
+    self.lightOn():
+                  ^
+SyntaxError: invalid syntax
+
+running install_egg_info
+removing '/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools-0.0.1-py3.8.egg-info' (and everything under it)
+Copying ../../build/bluey_tools/bluey_tools.egg-info to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools-0.0.1-py3.8.egg-info
+running install_scripts
+Installing bluey_ctrl script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools
+Installing bluey_video script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools
+writing list of installed files to '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log'
