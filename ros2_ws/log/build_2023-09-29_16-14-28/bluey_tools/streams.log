@@ -1,0 +1,45 @@
+[0.497s] Invoking command in '/home/jenkin/Documents/bluey/ros2_ws/src/bluey_tools': PYTHONPATH=/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/prefix_override:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bluey_tools build --build-base /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build install --record /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log --install-scripts $base/lib/bluey_tools --single-version-externally-managed
+[0.636s] running egg_info
+[0.636s] creating ../../build/bluey_tools/bluey_tools.egg-info
+[0.636s] writing ../../build/bluey_tools/bluey_tools.egg-info/PKG-INFO
+[0.637s] writing dependency_links to ../../build/bluey_tools/bluey_tools.egg-info/dependency_links.txt
+[0.637s] writing entry points to ../../build/bluey_tools/bluey_tools.egg-info/entry_points.txt
+[0.637s] writing requirements to ../../build/bluey_tools/bluey_tools.egg-info/requires.txt
+[0.637s] writing top-level names to ../../build/bluey_tools/bluey_tools.egg-info/top_level.txt
+[0.637s] writing manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+[0.654s] reading manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+[0.655s] writing manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+[0.655s] running build
+[0.655s] running build_py
+[0.655s] creating /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build
+[0.655s] creating /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib
+[0.655s] creating /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.655s] copying bluey_tools/__init__.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.655s] copying bluey_tools/video.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.655s] copying bluey_tools/bluey_video_node.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.655s] copying bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.656s] running install
+[0.656s] running install_lib
+[0.656s] creating /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+[0.656s] copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/__init__.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+[0.656s] copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/video.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+[0.656s] copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/bluey_video_node.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+[0.656s] copying /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build/lib/bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools
+[0.657s] byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/__init__.py to __init__.cpython-38.pyc
+[0.657s] byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/video.py to video.cpython-38.pyc
+[0.657s] byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_video_node.py to bluey_video_node.cpython-38.pyc
+[0.658s] byte-compiling /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_ctrl_node.py to bluey_ctrl_node.cpython-38.pyc
+[0.658s] Sorry: IndentationError: expected an indented block (bluey_ctrl_node.py, line 109)
+[0.658s] running install_data
+[0.658s] creating /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/share/ament_index
+[0.658s] creating /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/share/ament_index/resource_index
+[0.658s] creating /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/share/ament_index/resource_index/packages
+[0.658s] copying resource/bluey_tools -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/share/ament_index/resource_index/packages
+[0.658s] copying package.xml -> /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/share/bluey_tools
+[0.658s] running install_egg_info
+[0.659s] Copying ../../build/bluey_tools/bluey_tools.egg-info to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools-0.0.1-py3.8.egg-info
+[0.660s] running install_scripts
+[0.669s] Installing bluey_ctrl script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools
+[0.669s] Installing bluey_video script to /home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/bluey_tools
+[0.669s] writing list of installed files to '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log'
+[0.686s] Invoked command in '/home/jenkin/Documents/bluey/ros2_ws/src/bluey_tools' returned '0': PYTHONPATH=/home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/prefix_override:/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bluey_tools build --build-base /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/build install --record /home/jenkin/Documents/bluey/ros2_ws/build/bluey_tools/install.log --install-scripts $base/lib/bluey_tools --single-version-externally-managed

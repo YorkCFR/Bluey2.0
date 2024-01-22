@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bluey_interface/srv/Commands.srv
+// generated code does not contain a copyright notice
+
+
+module bluey_interface {
+  module srv {
+    struct Commands_Request {
+      string command;
+
+      string arg;
+    };
+    struct Commands_Response {
+      string result;
+
+      boolean status;
+    };
+  };
+};

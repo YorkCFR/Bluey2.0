@@ -1,0 +1,144 @@
+[0.053s] Invoking command in '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface': CMAKE_PREFIX_PATH=/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy /usr/bin/cmake --build /home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface -- -j4 -l4
+[0.304s] [  2%] Built target bluey_interface__cpp
+[0.323s] [ 12%] Built target bluey_interface__rosidl_generator_c
+[0.481s] [ 23%] Built target bluey_interface__rosidl_typesupport_introspection_cpp
+[0.491s] [ 33%] Built target bluey_interface__rosidl_typesupport_introspection_c
+[0.498s] [ 43%] Built target bluey_interface__rosidl_typesupport_cpp
+[0.506s] [ 53%] Built target bluey_interface__rosidl_typesupport_fastrtps_cpp
+[0.611s] [ 64%] Built target bluey_interface__rosidl_typesupport_c
+[0.633s] [ 74%] Built target bluey_interface__rosidl_typesupport_fastrtps_c
+[0.751s] [ 74%] Built target bluey_interface
+[0.885s] [ 76%] Built target bluey_interface__py
+[1.009s] [ 84%] Built target bluey_interface__python
+[1.141s] [ 97%] Built target bluey_interface__rosidl_typesupport_c__pyext
+[1.141s] [ 97%] Built target bluey_interface__rosidl_typesupport_introspection_c__pyext
+[1.141s] [100%] Built target bluey_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.171s] Invoked command in '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface' returned '0': CMAKE_PREFIX_PATH=/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy /usr/bin/cmake --build /home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface -- -j4 -l4
+[2.644s] Invoking command in '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface': CMAKE_PREFIX_PATH=/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy /usr/bin/cmake --install /home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface
+[2.664s] -- Install configuration: ""
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/rosidl_interfaces/bluey_interface
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/lights.h
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__struct.h
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__functions.c
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__functions.h
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__struct.h
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__functions.c
+[2.665s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__functions.h
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.h
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.h
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/arm.h
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_generator_c__visibility_control.h
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/library_path.sh
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/library_path.dsv
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_generator_c.so
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.666s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_fastrtps_c.h
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_fastrtps_c.h
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_fastrtps_c.so
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_fastrtps_cpp.hpp
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/dds_fastrtps
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_fastrtps_cpp.hpp
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg
+[2.667s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_fastrtps_cpp.so
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_introspection_c.h
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.c
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_introspection_c.h
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.c
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_introspection_c.so
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_c.so
+[2.668s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/lights.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/arm.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__struct.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__builder.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__traits.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__struct.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__builder.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__traits.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__rosidl_typesupport_introspection_cpp.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__type_support.cpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/arm__rosidl_typesupport_introspection_cpp.hpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/include/bluey_interface/srv/detail/lights__type_support.cpp
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_introspection_cpp.so
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__rosidl_typesupport_cpp.so
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/pythonpath.sh
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/pythonpath.dsv
+[2.669s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/__init__.py
+[2.703s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv
+[2.703s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_arm.py
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/__init__.py
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_lights.py
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_arm_s.c
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/srv/_lights_s.c
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[2.704s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[2.705s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/python3.8/site-packages/bluey_interface/bluey_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[2.705s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/lib/libbluey_interface__python.so
+[2.705s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm.idl
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights.idl
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm.srv
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm_Request.msg
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Arm_Response.msg
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights.srv
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights_Request.msg
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/srv/Lights_Response.msg
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/package_run_dependencies/bluey_interface
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/parent_prefix_path/bluey_interface
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/ament_prefix_path.sh
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/ament_prefix_path.dsv
+[2.706s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/path.sh
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/environment/path.dsv
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.bash
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.sh
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.zsh
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/local_setup.dsv
+[2.707s] -- Installing: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/package.dsv
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/ament_index/resource_index/packages/bluey_interface
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cExport.cmake
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cExport-noconfig.cmake
+[2.707s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cExport.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cExport.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cExport-noconfig.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_generator_cppExport.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cppExport.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cppExport.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake-extras.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.708s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_targets-extras.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interfaceConfig.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/cmake/bluey_interfaceConfig-version.cmake
+[2.709s] -- Up-to-date: /home/jenkin/Documents/bluey/ros2_ws/install/bluey_interface/share/bluey_interface/package.xml
+[2.714s] Invoked command in '/home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface' returned '0': CMAKE_PREFIX_PATH=/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools:/opt/ros/foxy /usr/bin/cmake --install /home/jenkin/Documents/bluey/ros2_ws/build/bluey_interface

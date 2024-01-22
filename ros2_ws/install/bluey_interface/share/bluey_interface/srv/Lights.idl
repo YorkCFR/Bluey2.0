@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bluey_interface/srv/Lights.srv
+// generated code does not contain a copyright notice
+
+
+module bluey_interface {
+  module srv {
+    struct Lights_Request {
+      boolean turn_on;
+    };
+    struct Lights_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

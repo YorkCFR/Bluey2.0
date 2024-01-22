@@ -1,0 +1,5 @@
+  File "/home/jenkin/Documents/bluey/ros2_ws/install/bluey_tools/lib/python3.8/site-packages/bluey_tools/bluey_ctrl_node.py", line 80
+    self.lightOn():
+                  ^
+SyntaxError: invalid syntax
+

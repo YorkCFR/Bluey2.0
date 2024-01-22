@@ -1,0 +1,6 @@
+source;share/bluey_tools/hook/pythonpath.ps1
+source;share/bluey_tools/hook/pythonpath.dsv
+source;share/bluey_tools/hook/pythonpath.sh
+source;share/bluey_tools/hook/ament_prefix_path.ps1
+source;share/bluey_tools/hook/ament_prefix_path.dsv
+source;share/bluey_tools/hook/ament_prefix_path.sh
