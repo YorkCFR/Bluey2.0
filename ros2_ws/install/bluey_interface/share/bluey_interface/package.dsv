@@ -4,9 +4,6 @@ source;share/bluey_interface/hook/cmake_prefix_path.sh
 source;share/bluey_interface/hook/ld_library_path_lib.ps1
 source;share/bluey_interface/hook/ld_library_path_lib.dsv
 source;share/bluey_interface/hook/ld_library_path_lib.sh
-source;share/bluey_interface/hook/pythonpath.ps1
-source;share/bluey_interface/hook/pythonpath.dsv
-source;share/bluey_interface/hook/pythonpath.sh
 source;share/bluey_interface/local_setup.bash
 source;share/bluey_interface/local_setup.dsv
 source;share/bluey_interface/local_setup.ps1

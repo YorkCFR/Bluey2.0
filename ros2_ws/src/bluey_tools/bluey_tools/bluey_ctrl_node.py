@@ -13,7 +13,7 @@ import json
 # It is based on various libraries that were scoured from the web. 
 # It's not very clever. Just something to get the job done
 #
-# This basically uses the mavlilnk library to talk tot eh PixHawk
+# This basically uses the mavlilnk library to talk to the PixHawk
 # Documentation on the navlink software can be found at
 # https://mavlink.io But essentially you communicate with the device
 # by setting PWM values for n servos.  'servo_n' is the AUX port to set 
@@ -41,6 +41,8 @@ import json
 # Where values are
 #    1100 = full dir1, 1900 = full dir2, 1500 = stop
 # These constants are defined in the class below
+#
+# For the camera tilt, 1500 is neutral, 1100 and 1900 are the limits
 #
 # The BlueROV operates in one of three modes
 #    Manual mode - all up to the operator
@@ -87,7 +89,7 @@ class BlueyCtrlNode(Node):
 
         self.create_service(Motion, f"/motion", self._handle_motion)
 
-        self.create_service(Motion, f"/commands", self._handle_commands)
+        self.create_service(Commands, f"/commands", self._handle_commands)
 
     def _handle_commands(self, request, response):
         self.get_logger().info(f'{self.get_name()} got a non-motion  {request.command}')
@@ -95,7 +97,7 @@ class BlueyCtrlNode(Node):
         response.status = True
 
         if request.command == 'getModes':
-            response.result = json.dumps(self._master.mode_mapping().keys())
+            response.result = json.dumps(list(self._master.mode_mapping().keys()))
         else:
             self.get_logger().info(f'{self.get_name()} got an invalid  non-motion  {request.command}')
             response.status = True
@@ -292,53 +294,53 @@ class BlueyCtrlNode(Node):
             self.get_logger().info(f"{self.get_name()} stopping the robot")
         self.clearMotion()
     
-    def forward(self):
+    def forward(self, speed=50):
         """Move forward at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot forward")
-        self._set_rc_channel_pwm(BlueyCtrlNode._FORWARD_SERVO, 1550) 
+            self.get_logger().info(f"{self.get_name()} moving the robot forward {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._FORWARD_SERVO, BlueyCtrlNode._STOP + speed) 
 
-    def reverse(self):
+    def reverse(self, speed=50):
         """Move in reverse at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot in reverse")
-        self._set_rc_channel_pwm(BlueyCtrlNode._FORWARD_SERVO, 1540) 
+            self.get_logger().info(f"{self.get_name()} moving the robot in reverse {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._FORWARD_SERVO, BlueyCtrlNode._STOP - speed) 
 
-    def yawLeft(self):
+    def yawLeft(self, speed=50):
         """Yaw left at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} yaw to the left")
-        self._set_rc_channel_pwm(BlueyCtrlNode._YAW_SERVO, 1450) 
+            self.get_logger().info(f"{self.get_name()} yaw to the left {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._YAW_SERVO, BlueyCtrlNode._STOP - speed) 
 
-    def yawRight(self):
+    def yawRight(self, speed=50):
         """Yaw right at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} yaw to the right")
-        self._set_rc_channel_pwm(BlueyCtrlNode._YAW_SERVO, 1550) 
+            self.get_logger().info(f"{self.get_name()} yaw to the right {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._YAW_SERVO, BlueyCtrlNode._STOP + speed) 
 
-    def up(self):
+    def up(self, speed=50):
         """Move up at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot up")
-        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, 1550) 
+            self.get_logger().info(f"{self.get_name()} moving the robot up {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, BlueyCtrlNode.STOP + speed) 
 
-    def down(self):
+    def down(self, speed=50):
         """Move down at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot down")
-        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, 1450) 
+            self.get_logger().info(f"{self.get_name()} moving the robot down {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, BlueyCtrlNode._STOP - speed) 
 
-    def swayLeft(self):
+    def swayLeft(self, speed=50):
         """Move to the left at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot to the left")
-        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, 1450) 
+            self.get_logger().info(f"{self.get_name()} moving the robot to the left {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueCtrlNode._STOP - speed) 
 
-    def swayRight(self):
+    def swayRight(self, speed=50):
         """Move to the right at a sensible speed"""
         if self._debug:
-            self.get_logger().info(f"{self.get_name()} moving the robot to the right")
-        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, 1550)
+            self.get_logger().info(f"{self.get_name()} moving the robot to the right {speed}")
+        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueCtrlNode._STOP + speed)
 
 
 #    elif event == 'Manual':
@@ -394,7 +396,7 @@ def main(args=None):
     try:
         rclpy.spin(bluey)
     except KeyboardInterrupt:
-        bluey.get_logger().info(f"BLueCtrlNode killed")
+        bluey.get_logger().info(f"BLueyCtrlNode killed")
     finally:
         rclpy.shutdown()
 

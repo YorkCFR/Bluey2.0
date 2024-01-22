@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001013] (-) JobUnselected: {'identifier': 'bluey_interface'}
-[0.001053] (-) JobUnselected: {'identifier': 'bluey_tools'}
-[0.001109] (-) EventReactorShutdown: {}
