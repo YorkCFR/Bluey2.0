@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages/bluey_tools/bluey_ui_node.py", line 199
+    Button(plane_frame, image=diag_up_left_icon, command=(lambda: self._move_robot('yawLeft')).grid(row=0, column=0)
+          ^
+SyntaxError: '(' was never closed
+

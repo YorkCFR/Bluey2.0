@@ -125,6 +125,12 @@ class BlueyCtrlNode(Node):
             self.swayLeft()
         elif request.command ==  'swayRight':
             self.swayRight()
+        elif request.command ==  'tiltUp':
+            self.tiltCamera(100)
+        elif request.command ==  'tiltDown':
+            self.tiltCamera(-100)
+        elif request.command ==  'tiltCenter':
+            self.tiltCamera(0)
         else:
             self.get_logger().info(f'{self.get_name()} got a bad request {request.command} stopping')
             self.clearMotion()
@@ -322,7 +328,7 @@ class BlueyCtrlNode(Node):
         """Move up at a sensible speed"""
         if self._debug:
             self.get_logger().info(f"{self.get_name()} moving the robot up {speed}")
-        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, BlueyCtrlNode.STOP + speed) 
+        self._set_rc_channel_pwm(BlueyCtrlNode._HEAVE_SERVO, BlueyCtrlNode._STOP + speed) 
 
     def down(self, speed=50):
         """Move down at a sensible speed"""
@@ -334,14 +340,22 @@ class BlueyCtrlNode(Node):
         """Move to the left at a sensible speed"""
         if self._debug:
             self.get_logger().info(f"{self.get_name()} moving the robot to the left {speed}")
-        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueCtrlNode._STOP - speed) 
+        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueyCtrlNode._STOP - speed) 
 
     def swayRight(self, speed=50):
         """Move to the right at a sensible speed"""
         if self._debug:
             self.get_logger().info(f"{self.get_name()} moving the robot to the right {speed}")
-        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueCtrlNode._STOP + speed)
+        self._set_rc_channel_pwm(BlueyCtrlNode._SWAY_SERVO, BlueyCtrlNode._STOP + speed)
 
+    def tiltCamera(self, tilt):
+        """Tilt a bit (-400..+400 by the manual)"""
+        if self._debug:
+            self.get_logger().info(f"{self.get_name()} tilting camera by {tilt}")
+        if (tilt < -200) or (tilt > 200):
+            self.get_logger().info(f"{self.get_name()} tilt too large")
+        else:
+            self._set_rc_channel_pwm(BlueyCtrlNode._CAMERA_TILT, BlueyCtrlNode._STOP + tilt)
 
 #    elif event == 'Manual':
 #        # Choose a mode

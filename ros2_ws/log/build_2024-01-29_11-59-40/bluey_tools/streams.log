@@ -1,0 +1,28 @@
+[0.489s] Invoking command in '/home/jenkin/Documents/Bluey2.0/ros2_ws/src/bluey_tools': PYTHONPATH=/home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/prefix_override:/home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bluey_tools build --build-base /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/build install --record /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/install.log --single-version-externally-managed
+[0.623s] running egg_info
+[0.623s] writing ../../build/bluey_tools/bluey_tools.egg-info/PKG-INFO
+[0.623s] writing dependency_links to ../../build/bluey_tools/bluey_tools.egg-info/dependency_links.txt
+[0.623s] writing entry points to ../../build/bluey_tools/bluey_tools.egg-info/entry_points.txt
+[0.623s] writing requirements to ../../build/bluey_tools/bluey_tools.egg-info/requires.txt
+[0.623s] writing top-level names to ../../build/bluey_tools/bluey_tools.egg-info/top_level.txt
+[0.624s] reading manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+[0.625s] writing manifest file '../../build/bluey_tools/bluey_tools.egg-info/SOURCES.txt'
+[0.625s] running build
+[0.625s] running build_py
+[0.625s] copying bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/build/lib/bluey_tools
+[0.625s] running install
+[0.625s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.625s]   warnings.warn(
+[0.625s] running install_lib
+[0.626s] copying /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/build/lib/bluey_tools/bluey_ctrl_node.py -> /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages/bluey_tools
+[0.626s] byte-compiling /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages/bluey_tools/bluey_ctrl_node.py to bluey_ctrl_node.cpython-310.pyc
+[0.627s] running install_data
+[0.627s] running install_egg_info
+[0.628s] removing '/home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages/bluey_tools-0.0.1-py3.10.egg-info' (and everything under it)
+[0.628s] Copying ../../build/bluey_tools/bluey_tools.egg-info to /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages/bluey_tools-0.0.1-py3.10.egg-info
+[0.629s] running install_scripts
+[0.639s] Installing bluey_ctrl script to /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/bluey_tools
+[0.639s] Installing bluey_ui script to /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/bluey_tools
+[0.639s] Installing bluey_video script to /home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/bluey_tools
+[0.639s] writing list of installed files to '/home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/install.log'
+[0.652s] Invoked command in '/home/jenkin/Documents/Bluey2.0/ros2_ws/src/bluey_tools' returned '0': PYTHONPATH=/home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/prefix_override:/home/jenkin/Documents/Bluey2.0/ros2_ws/install/bluey_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bluey_tools build --build-base /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/build install --record /home/jenkin/Documents/Bluey2.0/ros2_ws/build/bluey_tools/install.log --single-version-externally-managed
