@@ -43,6 +43,7 @@ import json
 # These constants are defined in the class below
 #
 # For the camera tilt, 1500 is neutral, 1100 and 1900 are the limits
+#    not what seems to be true works like the other motors????
 #
 # The BlueROV operates in one of three modes
 #    Manual mode - all up to the operator
@@ -64,6 +65,10 @@ class BlueyCtrlNode(Node):
     _NCHANNELS = 18
     _LIGHT_ON_VALUE = 1500
     _LIGHT_OFF_VALUE = 1100
+    _MAX_SPEED = 50
+    _MIN_SPEED = 10
+    _MODES = {'MANUAL' : -1, 'STABILIZE': -1, 'ALT_HOLD': -1}
+
 
     def __init__(self, debug=False):
         super().__init__('bluey_ctrl_node')
@@ -84,20 +89,57 @@ class BlueyCtrlNode(Node):
         self._light_on = False
         self.create_service(Lights, f"/set_lights", self._handle_lights)
 
+        # not armed
         self._armed = False
+        self.disarm()
         self.create_service(Arm, f"/arm", self._handle_arm)
+
+        self._speed = BlueyCtrlNode._MIN_SPEED  # default speed
 
         self.create_service(Motion, f"/motion", self._handle_motion)
 
         self.create_service(Commands, f"/commands", self._handle_commands)
 
+        # find the mode numbers for the available modes and set mode to manual
+        for k in BlueyCtrlNode._MODES.keys():
+            BlueyCtrlNode._MODES[k] = self._master.mode_mapping()[k]
+        self.setMode(mode='MANUAL')
+
+    def _get_mode_name(self, mode_id):
+        """associate name with mode_id""" 
+        for k in BlueyCtrlNode._MODES:
+            if BlueyCtrlNode._MODES[k] == mode_id:
+                return k
+        self.get_logger().info(f'{self.get_name()} invalid mode_id {mode_id}')
+        return "UNKNOWN"
+
     def _handle_commands(self, request, response):
+        """Deal with non motion commands"""
         self.get_logger().info(f'{self.get_name()} got a non-motion  {request.command}')
         response.result = ''
         response.status = True
 
         if request.command == 'getModes':
-            response.result = json.dumps(list(self._master.mode_mapping().keys()))
+            response.result = json.dumps(list(BlueyCtrlNode._MODES.keys()))
+        elif request.command == 'getMode':
+            if 'HEARTBEAT' in self._data:
+                custom_mode = self._data['HEARTBEAT']['custom_mode']
+                response.result = self._get_mode_name(custom_mode)
+            else:
+                self.get_logger().info(f'{self.get_name()} No Heartbeat message (yet?)')
+        elif request.command == 'setMode':
+            self.setMode(mode=request.arg)
+        elif request.command == 'getSpeed':
+            response.result = str(self._speed)
+        elif request.command == 'setSpeed':
+            self.get_logger().info(f'{self.get_name()} set speed argument {request.arg}')
+            speed = int(request.arg)
+            if (speed <  BlueyCtrlNode._MIN_SPEED) or (speed > BlueyCtrlNode._MAX_SPEED):
+                self.get_logger().info(f'{self.get_name()} set speed argument {request.arg} invalid, using min speed')
+                speed = BlueyCtrlNode._MIN_SPEED
+            self._speed = speed
+        elif request == 'armed':
+            response.result = self._armed
         else:
             self.get_logger().info(f'{self.get_name()} got an invalid  non-motion  {request.command}')
             response.status = True
@@ -110,21 +152,21 @@ class BlueyCtrlNode(Node):
         if request.command == 'stop':
             self.clearMotion()
         elif request.command ==  'forward':
-            self.forward()
+            self.forward(speed=self._speed)
         elif request.command ==  'reverse':
-            self.reverse()
+            self.reverse(speed=self._speed)
         elif request.command ==  'yawLeft':
-            self.yawLeft()
+            self.yawLeft(speed=self._speed)
         elif request.command ==  'yawRight':
-            self.yawRight()
+            self.yawRight(speed=self._speed)
         elif request.command ==  'up':
-            self.up()
+            self.up(speed=self._speed)
         elif request.command ==  'down':
-            self.down()
+            self.down(speed=self._speed)
         elif request.command ==  'swayLeft':
-            self.swayLeft()
+            self.swayLeft(speed=self._speed)
         elif request.command ==  'swayRight':
-            self.swayRight()
+            self.swayRight(speed=self._speed)
         elif request.command ==  'tiltUp':
             self.tiltCamera(100)
         elif request.command ==  'tiltDown':
@@ -234,7 +276,7 @@ class BlueyCtrlNode(Node):
         """Return available control modes"""
         return self._master.mode_mapping().keys()
 
-    def setMode(self, mode='ALT_HOLD'):
+    def setMode(self, mode='MANUAL'):
         """Set robot operating mode"""
 
         if mode not in self._master.mode_mapping():

@@ -16,7 +16,7 @@ from std_msgs.msg import String
 from bluey_interface.srv import Lights, Arm, Motion, Commands
 
 import tkinter as tk
-from tkinter import Frame, Button, Label, PhotoImage, RAISED
+from tkinter import Frame, Button, Label, PhotoImage, RAISED, IntVar, Checkbutton, LEFT
 import PIL.Image
 import PIL.ImageTk
 
@@ -30,6 +30,11 @@ class GuiNode(Node):
         self._videoout = None
         self._image = None
         self._bridge = CvBridge()
+        self._mode = IntVar()
+        self._arm = IntVar()
+        self._speed = IntVar()
+        self._video = IntVar()
+        self._lights = IntVar()
 
         # create client for lights
         client = self.create_client(Lights, f'/set_lights')
@@ -52,6 +57,13 @@ class GuiNode(Node):
             break
         self._motion_cli = client
 
+        # create client for commands
+        client = self.create_client(Commands, f'/commands')
+        while not client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info(f'{self.get_name()} Waiting for /commands')
+            break
+        self._commands_cli = client
+
         # deal with video
         self.declare_parameter('image', "/mycamera/image_raw")
         self._image_topic = self.get_parameter('image').get_parameter_value().string_value
@@ -62,11 +74,11 @@ class GuiNode(Node):
         self.get_logger().info(f"Node created")
 
     def _create_gui(self):
-        self._root.title("Bluey V1.0")
-        self._root.maxsize(900, 600)
+        self._root.title("Bluey V1.1")
+        self._root.maxsize(900, 800)
         self._root.config(bg="skyblue")
 
-        left_frame = Frame(self._root, width=300, height=600, bg='black')
+        left_frame = Frame(self._root, width=300, height=800, bg='red')
         left_frame.grid(row=0, column=0, padx=10, pady=10)
 
         centre_frame = Frame(self._root, width=200, height=400, bg='black')
@@ -78,30 +90,36 @@ class GuiNode(Node):
         up_down_frame =  Frame(self._root, width=200, height=400, bg='black')
         up_down_frame.grid(row=0, column=3, padx=10, pady=10)
 
-        light_frame = Frame(left_frame, width=200,height=50, bg="grey")
+        light_frame = Frame(left_frame, width=200,height=50, bg="black")
         light_frame.grid(row=0, column=0, padx=5, pady=5)
-        Label(light_frame, text="Light", relief=RAISED).grid(row=0, column=0)
-        Button(light_frame, text ="On", command=self._requestLightsOn).grid(row=0, column=1)
-        Button(light_frame, text="Off", command=self._requestLightsOff).grid(row=0, column=2)
+        Label(light_frame, text="Light", relief=RAISED).pack(side=LEFT, padx=5)
+        Checkbutton(light_frame, text ="On", variable=self._lights, onvalue=0, command=self._requestLights).pack(side=LEFT, padx=5)
+        Checkbutton(light_frame, text="Off", variable=self._lights, onvalue=1, command=self._requestLights).pack(side=LEFT, padx=5)
+        self._lights.set(1)
+        self._requestLights() # turns lights off
 
-        arm_frame = Frame(left_frame, width=200,height=50, bg="grey")
+        arm_frame = Frame(left_frame, width=200,height=50, bg="black")
         arm_frame.grid(row=1, column=0, padx=5, pady=5)
-        Label(arm_frame, text="Robot").grid(row=1, column=0)
-        Button(arm_frame, text ="Arm", command=self._requestArm).grid(row=1, column=1)
-        Button(arm_frame, text="Disarm", command=self._requestDisarm).grid(row=1, column=2)
+        Label(arm_frame, text="Robot").pack(side=LEFT, padx=5)
+        Checkbutton(arm_frame, text="Arm", variable=self._arm, onvalue=0, command=self._requestArm).pack(side=LEFT, padx=5)
+        Checkbutton(arm_frame, text="Disarm", variable=self._arm, onvalue=1, command=self._requestArm).pack(side=LEFT, padx=5)
+        self._arm.set(1)
+        self._requestArm() # unarms robot
 
-        video_frame = Frame(left_frame, width=200,height=50, bg="grey")
+        video_frame = Frame(left_frame, width=200,height=50, bg="black")
         video_frame.grid(row=2, column=0, padx=5, pady=5)
-        Label(video_frame, text="Video").grid(row=2, column=0)
-        Button(video_frame, text ="Record", command=self._requestRecordingOn).grid(row=2, column=1)
-        Button(video_frame, text="Off", command=self._requestRecordingOff).grid(row=2, column=2)
+        Label(video_frame, text="Video").pack(side=LEFT, padx=5)
+        Checkbutton(video_frame, text ="Rec", onvalue=1, variable=self._video, command=self._requestRecording).pack(side=LEFT, padx=5)
+        Checkbutton(video_frame, text="Off", onvalue=2, variable=self._video, command=self._requestRecording).pack(side=LEFT, padx=5)
+        self._video.set(2)
+        self._requestRecording() # not recording
 
-        tilt_frame = Frame(left_frame, width=200,height=50, bg="grey")
+        tilt_frame = Frame(left_frame, width=200,height=50, bg="black")
         tilt_frame.grid(row=3, column=0, padx=5, pady=5)
-        Label(tilt_frame, text="Camera Tilt").grid(row=2, column=0)
-        Button(tilt_frame, text ="Up", command=(lambda: self._move_robot("tiltUp"))).grid(row=2, column=1)
-        Button(tilt_frame, text="Horizontal", command=(lambda: self._move_robot("tiltCenter"))).grid(row=2, column=2)
-        Button(tilt_frame, text="Down", command=(lambda: self._move_robot("tiltDown"))).grid(row=2, column=3)
+        Label(tilt_frame, text="Camera Tilt").pack(side=LEFT, padx=5)
+        Button(tilt_frame, text ="Up", command=(lambda: self._move_robot("tiltUp"))).pack(side=LEFT, padx=5)
+        Button(tilt_frame, text="Stop", command=(lambda: self._move_robot("tiltCenter"))).pack(side=LEFT, padx=5)
+        Button(tilt_frame, text="Down", command=(lambda: self._move_robot("tiltDown"))).pack(side=LEFT, padx=5)
 
         self._keep = PIL.ImageTk.PhotoImage(PIL.Image.new('RGB', (320, 180), 'black'))
         self._label_image = Label(right_frame, image=self._keep)
@@ -135,6 +153,42 @@ class GuiNode(Node):
         Button(arrow_frame, image=self._stop_icon, command=(lambda: self._move_robot('stop'))).grid(row=1, column=0)
         Button(arrow_frame, image=self._down_icon, command=(lambda: self._move_robot('down'))).grid(row=2, column=0)
 
+        mode_frame = Frame(left_frame, width=200,height=50, bg="black")
+        mode_frame.grid(row=4, column=0, padx=5, pady=5)
+        Checkbutton(mode_frame, text="MAN", variable=self._mode, onvalue=0, command=self._requestMode).pack(side=LEFT, padx=5)
+        Checkbutton(mode_frame, text="STB", variable=self._mode, onvalue=1, command=self._requestMode).pack(side=LEFT, padx=5)
+        Checkbutton(mode_frame, text="ALT", variable=self._mode, onvalue=2, command=self._requestMode).pack(side=LEFT, padx=5)
+        self._mode.set(0)
+        self._requestMode()
+
+        speed_frame = Frame(left_frame, width=200,height=50, bg="black")
+        speed_frame.grid(row=5, column=0, padx=5, pady=5)
+        Label(speed_frame, text="Speed").pack(side=LEFT, padx=5)
+        Checkbutton(speed_frame, text="SLOW", variable=self._speed, onvalue=0, command=self._requestSpeed).pack(side=LEFT, padx=5)
+        Checkbutton(speed_frame, text="MED", variable=self._speed, onvalue=1, command=self._requestSpeed).pack(side=LEFT, padx=5)
+        Checkbutton(speed_frame, text="FAST", variable=self._speed, onvalue=2, command=self._requestSpeed).pack(side=LEFT, padx=5)
+        self._speed.set(0)
+        self._requestSpeed()
+
+
+    def _requestSpeed(self):
+        """change the robot mode as requested"""
+        self.get_logger().info(f'{self.get_name()} requesting speed {self._speed.get()}')
+        speeds = [30, 40, 50]
+        commands_req = Commands.Request()
+        commands_req.command = 'setSpeed'
+        commands_req.arg = str(speeds[self._speed.get()])
+        future = self._commands_cli.call_async(commands_req) # ignoring the future
+        print(f"Mode set to {commands_req.arg} {self._mode.get()}")
+
+    def _requestMode(self):
+        """change the robot mode as requested"""
+        modes = ["MANUAL", "STABILIZE", "ALT_HOLD"]
+        commands_req = Commands.Request()
+        commands_req.command = 'setMode'
+        commands_req.arg = modes[self._mode.get()]
+        future = self._commands_cli.call_async(commands_req) # ignoring the future
+        print(f"Mode set to {commands_req.arg} {self._mode.get()}")
 
     def _photo_image(self, image):
         height, width = image.shape[:2]
@@ -153,6 +207,12 @@ class GuiNode(Node):
 
         self._root.after(33, self._tk_timer)
 
+    def _requestLights(self):
+        if self._lights.get() == 0:
+            self._requestLightsOn()
+        else:
+            self._requestLightsOff()
+
     def _requestLightsOn(self):
         self.get_logger().info(f'{self.get_name()} requesting to turn lights on ')
         lights_req = Lights.Request()
@@ -166,22 +226,27 @@ class GuiNode(Node):
         future = self._set_lights_cli.call_async(lights_req) # ignoring the future
 
     def _requestArm(self):
-        self.get_logger().info(f'{self.get_name()} requesting to arm ')
+        self.get_logger().info(f'{self.get_name()} requesting to arm {self._arm.get()}')
+        
         arm_req = Arm.Request()
-        arm_req.arm = True
+        if self._arm.get() == 0: # arm
+            arm_req.arm = True
+        else:
+            arm_req.arm = False
         future = self._arm_cli.call_async(arm_req) # ignoring the future
 
-    def _requestDisarm(self):
-        self.get_logger().info(f'{self.get_name()} requesting to disarm')
-        arm_req = Arm.Request()
-        arm_req.arm = False
-        future = self._arm_cli.call_async(arm_req) # ignoring the future
 
     def _move_robot(self, direction):
         self.get_logger().info(f'{self.get_name()} direction is {direction}')
         self._motion_req = Motion.Request()
         self._motion_req.command = direction
         self._future = self._motion_cli.call_async(self._motion_req) # ignoring the future
+
+    def _requestRecording(self):
+        if self._video.get() == 1:
+            self._requestRecordingOn()
+        else:
+            self._requestRecordingOff()
 
     def _requestRecordingOn(self):
         self.get_logger().info(f'{self.get_name()} Recording on')
